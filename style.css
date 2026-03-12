@@ -1,0 +1,252 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+/* BODY */
+
+body{
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+min-height:100vh;
+}
+
+/* PAGE OVERLAY */
+
+.overlay{
+background:rgba(255,255,255,0.92);
+min-height:100vh;
+}
+
+/* HEADER */
+
+header{
+background:#0a4fa3;
+color:white;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+header h2{
+font-size:22px;
+}
+
+/* NAVIGATION */
+
+nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:40px 0;
+}
+
+/* GLOBAL IMAGES */
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+margin:auto;
+}
+
+/* EXPERT PROFILE IMAGES */
+
+
+.card img{
+width:80px;
+height:80px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:10px;
+}
+
+
+/* CONSULTANT PROFILE IMAGE */
+
+.profile-card img{
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+/* BUTTONS */
+
+button{
+background:#0a4fa3;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#083b7d;
+}
+
+/* EXPERT GRID */
+
+.experts-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+/* CARDS */
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.15);
+text-align:center;
+max-width:300px;
+margin:auto;
+}
+
+/* PROFILE CARD */
+
+.profile-card{
+max-width:500px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+/* CHAT BOX */
+
+.chat-box{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+max-width:700px;
+margin:auto;
+}
+
+/* CHAT MESSAGES */
+
+.message{
+margin:10px 0;
+padding:8px;
+border-radius:6px;
+}
+
+.user{
+text-align:right;
+background:#e6f0ff;
+}
+
+.consultant{
+text-align:left;
+background:#f3f3f3;
+}
+
+/* ADMIN DASHBOARD STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-bottom:40px;
+}
+
+.stat-card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+
+table th, table td{
+border:1px solid #ddd;
+padding:10px;
+text-align:center;
+}
+
+table th{
+background:#0a4fa3;
+color:white;
+}
+
+/* FORM INPUTS */
+
+input, select{
+width:100%;
+padding:10px;
+margin-top:8px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+justify-content:center;
+margin-top:10px;
+}
+
+.container{
+padding:20px 10px;
+}
+
+.experts-grid{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.chat-box{
+width:100%;
+}
+
+.card{
+max-width:100%;
+}
+
+}
