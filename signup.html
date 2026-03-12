@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up - Tax Connect</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.signup-container{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f4f6f9;
+}
+
+.signup-box{
+background:white;
+padding:40px;
+width:400px;
+border-radius:8px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.signup-box h2{
+margin-bottom:20px;
+}
+
+.signup-box input,
+.signup-box select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.signup-box button{
+width:100%;
+padding:12px;
+background:#0a4fa3;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+.signup-box button:hover{
+background:#083b7a;
+}
+
+.signup-box a{
+display:block;
+margin-top:15px;
+text-decoration:none;
+color:#0a4fa3;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="signup-container">
+
+<div class="signup-box">
+
+<h2>Create a Tax Connect Account</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="password" placeholder="Create Password" required>
+
+<select required>
+
+<option value="">Select Account Type</option>
+
+<option>Individual</option>
+
+<option>Business</option>
+
+<option>Consultant</option>
+
+</select>
+
+<button type="submit">Create Account</button>
+
+</form>
+
+<a href="login.html">Already have an account? Login</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
